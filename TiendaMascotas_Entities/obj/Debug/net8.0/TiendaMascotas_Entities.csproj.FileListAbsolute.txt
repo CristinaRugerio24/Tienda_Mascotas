@@ -1,0 +1,12 @@
+C:\Users\Cristi\Tienda_Mascotas\TiendaMascotas_Entities\bin\Debug\net8.0\TiendaMascotas_Entities.deps.json
+C:\Users\Cristi\Tienda_Mascotas\TiendaMascotas_Entities\bin\Debug\net8.0\TiendaMascotas_Entities.dll
+C:\Users\Cristi\Tienda_Mascotas\TiendaMascotas_Entities\bin\Debug\net8.0\TiendaMascotas_Entities.pdb
+C:\Users\Cristi\Tienda_Mascotas\TiendaMascotas_Entities\obj\Debug\net8.0\TiendaMascotas_Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cristi\Tienda_Mascotas\TiendaMascotas_Entities\obj\Debug\net8.0\TiendaMascotas_Entities.AssemblyInfoInputs.cache
+C:\Users\Cristi\Tienda_Mascotas\TiendaMascotas_Entities\obj\Debug\net8.0\TiendaMascotas_Entities.AssemblyInfo.cs
+C:\Users\Cristi\Tienda_Mascotas\TiendaMascotas_Entities\obj\Debug\net8.0\TiendaMascotas_Entities.csproj.CoreCompileInputs.cache
+C:\Users\Cristi\Tienda_Mascotas\TiendaMascotas_Entities\obj\Debug\net8.0\TiendaMascotas_Entities.sourcelink.json
+C:\Users\Cristi\Tienda_Mascotas\TiendaMascotas_Entities\obj\Debug\net8.0\TiendaMascotas_Entities.dll
+C:\Users\Cristi\Tienda_Mascotas\TiendaMascotas_Entities\obj\Debug\net8.0\refint\TiendaMascotas_Entities.dll
+C:\Users\Cristi\Tienda_Mascotas\TiendaMascotas_Entities\obj\Debug\net8.0\TiendaMascotas_Entities.pdb
+C:\Users\Cristi\Tienda_Mascotas\TiendaMascotas_Entities\obj\Debug\net8.0\ref\TiendaMascotas_Entities.dll
