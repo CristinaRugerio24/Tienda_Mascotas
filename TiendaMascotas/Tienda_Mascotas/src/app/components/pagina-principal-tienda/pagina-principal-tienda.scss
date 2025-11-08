@@ -1,0 +1,78 @@
+.tienda-principal {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+  }
+
+  .productos-destacados {
+    h2 {
+      color: #555;
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+    }
+
+    .productos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+
+      .producto-card {
+        background: white;
+        border-radius: 8px;
+        padding: 1.5rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        h3 {
+          color: #333;
+          margin-bottom: 0.5rem;
+          font-size: 1.3rem;
+        }
+
+        p {
+          color: #666;
+          margin-bottom: 1rem;
+          line-height: 1.5;
+        }
+
+        .precio {
+          font-size: 1.2rem;
+          font-weight: bold;
+          color: #e74c3c;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .tienda-principal {
+    padding: 1rem;
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    .productos-destacados {
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      .productos-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+    }
+  }
+}
