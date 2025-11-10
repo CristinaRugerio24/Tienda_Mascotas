@@ -1,35 +1,30 @@
-using Microsoft.EntityFrameworkCore;
+using Serilog;
+using System.Reflection;
+using TiendaMascotas;
 
-var builder = WebApplication.CreateBuilder(args);
-
-builder.Services.AddRazorPages();
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-builder.Services.AddDbContext<TiendaMascotasDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("ConnectionBD")));
-
-var app = builder.Build();
-
-if (!app.Environment.IsDevelopment())
+namespace Administracion
 {
-    app.UseExceptionHandler("/Error");
-    app.UseHsts();
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            CreateHostBuilder(args).Build().Run();
+        }
+
+        public static IHostBuilder CreateHostBuilder(string[] args)
+        {
+            var host = Host.CreateDefaultBuilder(args).UseSerilog()
+                .ConfigureWebHostDefaults(webBuilder =>
+                {
+                    webBuilder.UseStartup<Startup>();
+                });
+            host.ConfigureAppConfiguration((hostContext, config) =>
+            {
+                config.SetBasePath(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
+                config.AddJsonFile("appsettings.json", optional: true, false);
+                config.AddEnvironmentVariables();
+            });
+            return host;
+        }
+    }
 }
-
-// Habilita Swagger siempre
-app.UseSwagger();
-app.UseSwaggerUI();
-
-// Redirige la raíz a Swagger UI
-app.MapGet("/", context =>
-{
-    context.Response.Redirect("/swagger");
-    return Task.CompletedTask;
-});
-
-app.UseHttpsRedirection();
-app.UseStaticFiles();
-app.UseRouting();
-app.UseAuthorization();
-app.MapRazorPages();
-app.Run();

@@ -7,8 +7,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\TiendaMascotas_Data\TiendaMascotas_Data.csproj" />
     <ProjectReference Include="..\TiendaMascotas_Entities\TiendaMascotas_Entities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Services\ClienteArticulo\" />
+    <Folder Include="Services\Login\Dtos\InputModel\" />
+    <Folder Include="Services\Login\Dtos\OutputModel\" />
+    <Folder Include="Services\Login\Mapper\" />
+    <Folder Include="Services\Login\Specification\" />
+    <Folder Include="Services\TiendaArticulo\" />
   </ItemGroup>
 
 </Project>
